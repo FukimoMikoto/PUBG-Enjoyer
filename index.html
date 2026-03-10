@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PUBG Battlegrounds Hub</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header>
+<h1>PUBG BATTLEGROUNDS</h1>
+<nav>
+<a href="#weapons">Weapons</a>
+<a href="#map">Map</a>
+<a href="#crate">Loot Crate</a>
+<a href="#kills">Kills</a>
+</nav>
+</header>
+
+
+<section class="hero">
+
+<h2>Winner Winner Chicken Dinner</h2>
+<p>Drop. Loot. Survive.</p>
+
+<button onclick="playSound()">Fire Weapon 🔫</button>
+
+</section>
+
+
+<section id="weapons">
+
+<h2>Weapons</h2>
+
+<div class="weapon-container">
+
+<div class="weapon-card">
+<img src="images/AKM.jpeg">
+<h3>AKM</h3>
+</div>
+
+<div class="weapon-card">
+<img src="images/AUG.jpg">
+<h3>AUG</h3>
+</div>
+
+<div class="weapon-card">
+<img src="images/AWM.jpg">
+<h3>AWM</h3>
+</div>
+
+</div>
+
+</section>
+
+
+<section id="map">
+
+<h2>Battle Royale Map</h2>
+
+<div class="map-container">
+<img src="images/erangel-ee673d73.jpg" id="mapImage">
+</div>
+
+</section>
+
+
+<section id="crate">
+
+<h2>Loot Crate</h2>
+
+<div class="crate" onclick="openCrate()">
+📦
+</div>
+
+<p id="lootText">Click the crate to open!</p>
+
+</section>
+
+
+<section id="kills">
+
+<h2>Kill Counter</h2>
+
+<div class="killBox">
+
+<p>Kills: <span id="killsCount">0</span></p>
+
+<button onclick="addKill()">Enemy Eliminated</button>
+
+</div>
+
+</section>
+
+
+<footer>
+
+<p>Fan Made PUBG Website</p>
+
+</footer>
+
+<audio id="gunshot" src="sounds/gunshot.mp3"></audio>
+
+<script src="script.js"></script>
+
+</body>
+</html>
